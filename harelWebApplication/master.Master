@@ -9,10 +9,15 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <h1>aaa</h1>
-    
+    <h1>welcome to maccabi</h1>
+
+    <a href="register.aspx">register.aspx</a>
+    <a href="login.aspx">login.aspx</a>
+    <a href="form.aspx">form.aspx</a>
+
+    <hr />
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-     
+        <h1>end</h1>
 </body>
 </html>
