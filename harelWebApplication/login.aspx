@@ -10,7 +10,7 @@
         <input type="text" name="mail" id="mail" placeholder="enter email...">
         <br />
         סיסמה:
-        <input type="text" name="pass" id="pass" placeholder="enter password...">
+        <input type="text" name="pass" id="pass" placeholder="enter password..." />
         <br />
         <input id="Submit1" type="submit" value="שלח" />
 </asp:Content>
