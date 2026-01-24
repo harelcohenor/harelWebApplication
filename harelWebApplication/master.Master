@@ -8,7 +8,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body style="text-align:center">
     <h1>welcome to maccabi</h1>
 
     <a href="register.aspx">register.aspx</a>
@@ -18,6 +18,5 @@
     <hr />
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-        <h1>end</h1>
 </body>
 </html>

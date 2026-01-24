@@ -4,6 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>טופס הרשמה</h1>
     <form name="formPage" method="post" runat="server">
+            <div style="direction:rtl;text-align:right">
+
         שם פרטי: <input type="text" name="firstname" id="firstname" placeholder="example">
         <br />
         מקצועות אהובים: 
@@ -31,4 +33,5 @@
         <br />
         <input id="Submit1" type="submit" value="שלח" />
     </form>
+    <div />
 </asp:Content>

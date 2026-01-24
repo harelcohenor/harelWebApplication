@@ -1,0 +1,23 @@
+﻿body {
+    background-color: lightyellow;
+}
+#LoginForm {
+    text-align: center;
+    direction: rtl;
+    background-color:  lightblue;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 550px;
+    margin-right: 550px;
+}
+#RegisterForm {
+    text-align: center;
+    direction: rtl;
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 550px;
+    margin-right: 550px;
+}
+}
+
