@@ -4,11 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <h1>כניסה למנוי </h1>
     <link href="style/StyleSheet1.css" rel="stylesheet" />
+     <form>
     <div id="LoginForm">
-        שם:
-        <br />
-        <input type="text" name="name" id="name" placeholder="enter your name...">
-        <br />
         מייל:
          <br />
         <input type="text" name="mail" id="mail" placeholder="enter email...">
@@ -17,10 +14,8 @@
          <br />
         <input type="text" name="pass" id="pass" placeholder="enter password..." />
         <br />
-        אימות סיסמה:
-         <br />
-        <input type="text" name="confirmpass" id="confirmpss" placeholder="confirm your password">
-        <br />
-        <input id="Submit1" type="submit" value="שלח" />
+     
         </div>
+    </form>
+    <%=st %>
 </asp:Content>

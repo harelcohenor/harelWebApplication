@@ -42,18 +42,19 @@
 <br />
              מין?: 
  <br />
- זכר<input type="radio" name="radio1" checked value="זכר" id="radio_1"><br />
- נקבה<input type="radio" name="radio1" value="נקבה" id="radio_2"><br />
- אחר<input type="radio" name="radio1" value="אחר" id="radio_2"><br />
+ זכר<input type="radio" name="radio1" checked value="זכר" id="radio1"><br />
+ נקבה<input type="radio" name="radio1" value="נקבה" id="radio1"><br />
+ אחר<input type="radio" name="radio1" value="אחר" id="radio1"><br />
  
            תפרט על עצמך :
        <br/>
-            <textarea rows="5" cols="20" name="textarea1" id="textarea1" placeholder="הכנס מלל חופשי"></textarea>
+            <textarea rows="5" cols="20" name="freechat" id="textarea1" placeholder="הכנס מלל חופשי"></textarea>
    <br />
                 <input id="Submit1" type="submit" value="שלח" />
 </div>
         
     </form>
+        <%=st %>
 </div>
 
 </asp:Content>

@@ -4,7 +4,7 @@
 #LoginForm {
     text-align: center;
     direction: rtl;
-    background-color:  lightblue;
+    background-color:  red;
     padding: 20px;
     border-radius: 5px;
     margin-left: 550px;
@@ -13,7 +13,7 @@
 #RegisterForm {
     text-align: center;
     direction: rtl;
-    background-color: lightblue;
+    background-color: red;
     padding: 20px;
     border-radius: 5px;
     margin-left: 550px;
