@@ -16,13 +16,16 @@ namespace harelWebApplication
             if (Page.IsPostBack)
             {
                 string name = Request.Form["name"];
-                string lastname = Request.Form["last name"];
+                string lastname = Request.Form["lastname"];
                 string mail = Request.Form["mail"];
                 string pass = Request.Form["pass"];
-                string confirmpass = Request.Form["confirmpass"];
                 string radio1 = Request.Form["radio1"];
                 string freechat = Request.Form["freechat"];
                 string age = Request.Form["age"];
+
+                string sql =
+                    "SELECT * FROM tUsers " +
+                    "WHERE mail = '" + mail + "' ";
 
                 bool userExists = MyAdoHelper.IsExist(sql);
                 if (!userExists)
@@ -34,10 +37,9 @@ namespace harelWebApplication
                     "N'" + lastname + "'," +
                     "N'" + mail + "'," +
                     "N'" + pass + "'," +
-                    "N'" + confirmpass + "'," +
+                    age + "," +
                     "N'" + radio1 + "'," +
-                    "N'" + freechat + "'," +
-                    age +
+                    "N'" + freechat + "'" +
                     ")";
 
                     MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);

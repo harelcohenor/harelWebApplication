@@ -26,7 +26,7 @@
             בן כמה את/ה?:
     <select name="age" id="age">
     <option value="0">בחר גיל</option>
-    <option value="15">15</option>
+    <option value="9">9</option>
     <option value="10">10</option>
     <option value="11">11</option>
     <option value="12">12</option>

@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace harelWebApplication
 {
-    public partial class login : System.Web.UI.Page
+    public partial class Login : System.Web.UI.Page
     {
         public string st = "";
         protected void Page_Load(object sender, EventArgs e)
@@ -18,18 +18,29 @@ namespace harelWebApplication
 
                 string mail = Request.Form["mail"];
                 string pass = Request.Form["pass"];
-                string sql =
-                    "SELECT * FROM tUsers " +
-                    "WHERE email = '" + mail + "' " +
-                    "AND password = '" + pass + "'";
-                bool userExists = MyAdoHelper.IsExist(sql);
-                if (!userExists)
+
+                //התחברות מנהל 
+                if (mail == "harelcohenor@gmail.com" && pass == "harel2009")
                 {
-                    st = "אימייל או סיסמה שגויים";
+                    Response.Redirect("Manager.aspx");
                 }
                 else
                 {
-                    Response.Redirect("homepage2.aspx");
+                    //בדיקת משתמש רגיל
+                    string sql =
+                        "SELECT * FROM tUsers " +
+                        "WHERE mail = '" + mail + "' " +
+                        "AND pass = '" + pass + "'";
+
+                    bool userExists = harelWebApplication.MyAdoHelper.IsExist(sql);
+                    if (!userExists)
+                    {
+                        st = "אימייל או סיסמה שגויים";
+                    }
+                    else
+                    {
+                        Response.Redirect("Home.aspx");
+                    }
                 }
             }
 
