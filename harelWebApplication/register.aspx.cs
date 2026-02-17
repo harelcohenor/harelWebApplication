@@ -17,9 +17,9 @@ namespace harelWebApplication
             {
                 string name = Request.Form["name"];
                 string lastname = Request.Form["lastname"];
-                string mail = Request.Form["mail"];
+                string mail = Request.Form["email"];
                 string pass = Request.Form["pass"];
-                string radio1 = Request.Form["radio1"];
+                string gender = Request.Form["gender"];
                 string freechat = Request.Form["freechat"];
                 string age = Request.Form["age"];
 
@@ -38,7 +38,7 @@ namespace harelWebApplication
                     "N'" + mail + "'," +
                     "N'" + pass + "'," +
                     age + "," +
-                    "N'" + radio1 + "'," +
+                    "N'" + gender + "'," +
                     "N'" + freechat + "'" +
                     ")";
 

@@ -15,13 +15,10 @@
         <input type="text" name="lastname" id="lastname" placeholder="enter last name...">
         <br />
         מייל:
-        <input type="text" name="mail" id="mail" placeholder="enter email...">
+        <input type="text" name="email" id="mail" placeholder="enter mail...">
         <br />
         סיסמה:
         <input type="text" name="pass" id="pass" placeholder="enter password...">
-        <br />
-        אימות סיסמה:
-        <input type="text" name="confirmpass" id="confirmpss" placeholder="confirm your password">
         <br />
             בן כמה את/ה?:
     <select name="age" id="age">
@@ -42,9 +39,9 @@
 <br />
              מין?: 
  <br />
- זכר<input type="radio" name="radio1" checked value="זכר" id="radio1"><br />
- נקבה<input type="radio" name="radio1" value="נקבה" id="radio1"><br />
- אחר<input type="radio" name="radio1" value="אחר" id="radio1"><br />
+ זכר<input type="radio" name="gender" checked value="זכר" id="boy"><br />
+ נקבה<input type="radio" name="gender" value="נקבה" id="girl"><br />
+ אחר<input type="radio" name="gender" value="אחר" id="other"><br />
  
            תפרט על עצמך :
        <br/>

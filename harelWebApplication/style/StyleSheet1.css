@@ -1,10 +1,10 @@
 ﻿body {
-    background-color: yellow;
+    background-color: lightblue;
 }
 #LoginForm {
     text-align: center;
     direction: rtl;
-    background-color:  rebeccapurple;
+    background-color: lightgrey;
     padding: 20px;
     border-radius: 5px;
     margin-left: 550px;
@@ -13,12 +13,12 @@
 #RegisterForm {
     text-align: center;
     direction: rtl;
-    background-color: rebeccapurple;
+    background-color: lightgrey;
     padding: 20px;
     border-radius: 5px;
     margin-left: 550px;
     margin-right: 550px;
 }
-#Form
-}
+
+
 

@@ -9,12 +9,13 @@
     </asp:ContentPlaceHolder>
 </head>
 <body style="text-align:center">
-    <h1>welcome to maccabi</h1>
+    <h1>The NBA</h1>
 
-    <a href="register.aspx">register.aspx</a>
+    <a href="register.aspx">register.aspx </a>
     <a href="login.aspx">login.aspx</a>
     <a href="form.aspx">form.aspx</a>
-
+    <a href="Manager.aspx">Manager.aspx</a>
+    <a href="Home.aspx">Home.aspx</a>
     <hr />
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>

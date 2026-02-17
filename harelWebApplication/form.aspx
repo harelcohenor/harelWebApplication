@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>טופס הרשמה</h1>
-     <link href="style/StyleSheet1.css" rel="stylesheet" />
+    <link href="style/StyleSheet1.css" rel="stylesheet" />
     <form name="formPage" method="post" runat="server">
             <div style="direction:rtl;text-align:right">
 
