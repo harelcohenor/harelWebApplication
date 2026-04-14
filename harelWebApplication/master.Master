@@ -4,19 +4,29 @@
 
 <html>
 <head runat="server">
+    <style>
+ 
+        img.menu {
+            width:90px;
+            height:40px
+        }
+        .my-button:hover {
+            background-color: #45a049;
+        }
+    </style>
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body style="text-align:center">
-    <h1>The NBA</h1>
-
-    <a href="register.aspx">register.aspx </a>
-    <a href="login.aspx">login.aspx</a>
-    <a href="form.aspx">form.aspx</a>
-    <a href="Manager.aspx">Manager.aspx</a>
-    <a href="Home.aspx">Home.aspx</a>
+    <h1>THE LAKERS</h1>
+    <a href="Register.aspx"><img class="menu" src="images/הרשמה.png" />/></a>
+    <a href="Login.aspx"><img class="menu" src="images/כניסה.png" /></a>
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="form.aspx" Text="בדיקה" />
+        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="Manager.aspx" Text="מנהל" />
+        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="Home.aspx" Text="עמוד בית" />
     <hr />
+    שלום<%=Session["username"]%>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
 </body>

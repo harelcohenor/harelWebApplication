@@ -72,12 +72,16 @@
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="form.aspx" />
+    <Content Include="images\הרשמה.png" />
+    <Content Include="images\כניסה.png" />
     <Content Include="Login.aspx" />
     <Content Include="Manager.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="style\StyleSheet1.css" />
     <Content Include="Web.config" />
+    <Content Include="addplayer.aspx" />
+    <Content Include="WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Code\MyAdoHelper.cs" />
@@ -123,6 +127,20 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addplayer.aspx.cs">
+      <DependentUpon>addplayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addplayer.aspx.designer.cs">
+      <DependentUpon>addplayer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

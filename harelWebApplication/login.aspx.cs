@@ -22,6 +22,7 @@ namespace harelWebApplication
                 //התחברות מנהל 
                 if (mail == "harelcohenor@gmail.com" && pass == "harel2009")
                 {
+                    Session["username"] = "אראל המנהל";
                     Response.Redirect("Manager.aspx");
                 }
                 else
@@ -35,10 +36,12 @@ namespace harelWebApplication
                     bool userExists = harelWebApplication.MyAdoHelper.IsExist(sql);
                     if (!userExists)
                     {
+                        Session["username"] = "אורח";
                         st = "אימייל או סיסמה שגויים";
                     }
                     else
                     {
+                        Session["username"] = "משתמש רשום";
                         Response.Redirect("Home.aspx");
                     }
                 }
