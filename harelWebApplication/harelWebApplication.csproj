@@ -72,8 +72,11 @@
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="form.aspx" />
+    <Content Include="images\הוספת שחקן.png" />
     <Content Include="images\הרשמה.png" />
     <Content Include="images\כניסה.png" />
+    <Content Include="images\מנהל.png" />
+    <Content Include="images\עמוד בית.png" />
     <Content Include="Login.aspx" />
     <Content Include="Manager.aspx" />
     <Content Include="Home.aspx" />
