@@ -1,18 +1,40 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="harelWebApplication.register" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script language="javascript">
+        function chackAll() {
+            fnErr.innerHTML = "";
+            lnErr.innerHTML = "";
+
+
+            result = true;
+
+
+            if (checkFirstName == false)
+                result = false;
+            if (!checkLastName)
+                result = false;
+
+
+
+
+            return result;
+        }
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link href="style/StyleSheet1.css" rel="stylesheet" />
     <h1>הרשמה למנוי </h1>
     <div id="RegisterForm">
-    <form name="formPage" method="post" runat="server">
+    <form name="formPage" method="post" runat="server" onsumbit="return checkAll();">
         <div style="direction: rtl; text-align: right">       
         שם פרטי:
         <input type="text" name="name" id="name" placeholder="enter name...">
+            <td id ="fnErr"></td>
         <br />
         שם משפחה:
         <input type="text" name="lastname" id="lastname" placeholder="enter last name...">
+            <td id ="lnErr"></td>
         <br />
         מייל:
         <input type="text" name="email" id="mail" placeholder="enter mail...">

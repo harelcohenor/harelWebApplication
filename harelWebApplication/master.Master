@@ -24,6 +24,8 @@
     <a href="Login.aspx"><img class="menu" src="images/כניסה.png" /></a>
     <a href="Manager.aspx"><img class="menu" src="images/מנהל.png" /></a>
     <a href="Home.aspx"><img class="menu" src="images/עמוד%20בית.png" /></a>
+    <a href="galery.aspx"><img class="menu" src="images/תמונה1.png" /></a>
+    <a href="logout.aspx"><img class="menu" src="images/יציאה.png" /></a>
     <hr />
     שלום<%=Session["username"]%>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
